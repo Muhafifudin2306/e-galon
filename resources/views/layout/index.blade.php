@@ -245,9 +245,9 @@
             <nav class="sidebar sidebar-offcanvas" id="sidebar">
                 <ul class="nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">
+                        <a class="nav-link" href="{{ route('dashboard') }}">
                             <i class="icon-grid menu-icon"></i>
-                            <span class="menu-title">Dashboard</span>
+                            <span class="menu-title"> Dashboard</span>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -259,9 +259,9 @@
                         </a>
                         <div class="collapse" id="form-elements">
                             <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"><a class="nav-link" href="pages/forms/basic_elements.html">
+                                <li class="nav-item"><a class="nav-link" href="/invoice">
                                     Riwayat Invoice </a></li>
-                                <li class="nav-item"><a class="nav-link" href="pages/forms/basic_elements.html">
+                                <li class="nav-item"><a class="nav-link" href="/invoice/create">
                                         Buat Invoice </a></li>
                             </ul>
                         </div>
@@ -276,8 +276,10 @@
                         <div class="collapse" id="charts">
                             <ul class="nav flex-column sub-menu">
                                 <li class="nav-item"> <a class="nav-link"
-                                        href="pages/charts/chartjs.html">Laporan</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/charts/chartjs.html">Buat Catatan</a></li>
+                                        href="/finance">Laporan</a></li>
+                                <li class="nav-item"> <a class="nav-link"
+                                            href="/finance/add">Buat Catatan</a></li>
+                                {{-- <li class="nav-item"> <a class="nav-link" href="/finance/create">Buat Catatan</a></li> --}}
                             </ul>
                         </div>
                     </li>
@@ -290,8 +292,8 @@
                         </a>
                         <div class="collapse" id="tables">
                             <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="pages/tables/basic-table.html">Daftar Inventaris</a></li>
-                                        <li class="nav-item"> <a class="nav-link" href="pages/tables/basic-table.html">Tambah Inventaris</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="/inventory">Daftar Inventaris</a></li>
+                                        <li class="nav-item"> <a class="nav-link" href="/createdata">Tambah Inventaris</a></li>
                             </ul>
                         </div>
                     </li>
@@ -304,9 +306,9 @@
                         </a>
                         <div class="collapse" id="icons">
                             <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="pages/icons/mdi.html">Air Tangki</a>
+                                <li class="nav-item"> <a class="nav-link" href="/supply/air">Air Tangki</a>
                                 </li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/icons/mdi.html">Peralatan</a>
+                                <li class="nav-item"> <a class="nav-link" href="/supply/tool">Peralatan</a>
                                 </li>
                             </ul>
                         </div>
